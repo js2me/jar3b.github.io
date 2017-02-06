@@ -1,0 +1,28 @@
+@keyframes spin { 
+        from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(360deg); 
+        }
+    }
+@keyframes run {
+from {
+  transform: rotate(20deg) translateX(-50em);
+}
+40% {
+  transform: scale(2,2) translateX(-10em);
+}
+50% {
+  transform: scale(2,2) translateX(-10em);
+  color:red;
+}
+60% {
+  transform: scale(2,2) translateX(-10em);
+}
+to {
+  transform: rotate(-20deg) translateX(100em);
+}
+}
+g {
+    animation: run  5s infinite ease-in-out;
+}
